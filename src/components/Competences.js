@@ -3,9 +3,9 @@ import {
   Container,
   Row,
   Col,
-  ProgressBar,
   OverlayTrigger,
   Popover,
+  Card,
 } from "react-bootstrap";
 import {
   GiGecko,
@@ -15,6 +15,25 @@ import {
 } from "react-icons/gi";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import { FaCode } from "react-icons/fa";
+import html from "../img/html.jpg";
+import js from "../img/js.jpg";
+import css from "../img/css.png";
+import node from "../img/node.jpg";
+import php from "../img/php.jpg";
+import python from "../img/python.jpg";
+import sql from "../img/sql.jpg";
+import react from "../img/react.jpg";
+import express from "../img/express.jpg";
+import bootstrap from "../img/bootstrap.jpg";
+import firebase from "../img/firebase.jpg";
+import mysql from "../img/mysql.jpg";
+import vscode from "../img/vscode.jpg";
+import github from "../img/github.jpg";
+import slack from "../img/slack.jpg";
+import postman from "../img/postman.jpg";
+import figma from "../img/figma.jpg";
+import photoshop from "../img/photoshop.jpg";
+import procreate from "../img/procreate.jpg";
 
 const Competences = () => {
   return (
@@ -134,86 +153,167 @@ const Competences = () => {
           <Col className="col-12 col-md-4 mt-4">
             <h4>LANGUAGES</h4>
             <Col>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>HTML</div> <ProgressBar now={80} label="80%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={html} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">HTML</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-2">
-                <div>CSS</div> <ProgressBar now={80} label="80%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={css} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">CSS</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-2">
-                <div>JavaScript</div>{" "}
-                <ProgressBar now={80} label="80%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={js} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">JavaScript</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-2">
-                <div>SQL</div> <ProgressBar now={60} label="60%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={sql} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">SQL</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-2">
-                <div>PHP</div> <ProgressBar now={20} label="20%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={php} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">PHP</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-2">
-                <div>Python</div> <ProgressBar now={10} label="10%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={python} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">Python</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
             </Col>
           </Col>
-
           <Col className="col-12 col-md-4 mt-4">
             <h4>FRAMEWORKS & LIBS</h4>
             <Col>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>NodeJS</div> <ProgressBar now={60} label="60%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={node} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">Node JS</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>ReactJS</div>
-                <ProgressBar now={80} label="80%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={react} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">React JS</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>ExpressJS</div>{" "}
-                <ProgressBar now={60} label="60%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={express} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">Express JS</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>Bootstrap</div>
-                <ProgressBar now={70} label="70%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={bootstrap} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">Bootstrap</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>Firebase</div>{" "}
-                <ProgressBar now={70} label="70%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={firebase} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">Firebase</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>MySql</div> <ProgressBar now={60} label="60%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={mysql} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">MySql</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
             </Col>
           </Col>
-
           <Col className="col-12 col-md-4 mt-4">
             <h4>OUTILS</h4>
             <Col>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>VS Code</div>
-                <ProgressBar now={80} label="80%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={vscode} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">VS Code</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>Git </div>
-                <ProgressBar now={70} label="70%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={github} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">Github</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>Postman</div>
-                <ProgressBar now={60} label="60%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={postman} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">Postman</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>Slack</div>
-                <ProgressBar now={80} label="80%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={slack} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">Slack</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>Figma</div>
-                <ProgressBar now={40} label="40%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={figma} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">Figma</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>Photoshop</div>
-                <ProgressBar now={70} label="70%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={photoshop} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">Photoshop</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
-              <Row className="d-flex flex-row justify-content-between mt-3">
-                <div>ProCreate</div>
-                <ProgressBar now={70} label="70%" bg="dark" />
+              <Row className="mt-3 justify-content-center align-items-center ">
+                <Card style={{ width: "80%", color: "#1a1e23" }}>
+                  <Card.Img variant="top" src={procreate} />
+                  <Card.Body className="pt-2 pb-2">
+                    <Card.Title className="mb-0">ProCreate</Card.Title>
+                  </Card.Body>
+                </Card>
               </Row>
             </Col>
           </Col>
