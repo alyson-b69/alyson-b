@@ -105,9 +105,19 @@ const Portefolio = () => {
                   <br />
                   <small>2 devs</small>
                   <p className="text-justify">
-                    Une App co-codée avec Guillaume pour présenter React à nos
-                    camarades traitant sur l'organisation d'un projet et une
-                    introduction à Redux.
+                    Une App co-codée avec{" "}
+                    <a
+                      href="https://www.linkedin.com/in/guillaume-bento-aires-7623071a3/"
+                      alt="Guillaume Linkedin"
+                      title="Guillaume Linkedin"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="myColor"
+                    >
+                      Guillaume
+                    </a>{" "}
+                    pour présenter React à nos camarades traitant sur
+                    l'organisation d'un projet et une introduction à Redux.
                   </p>
                 </div>
               </Col>
@@ -265,9 +275,19 @@ const Portefolio = () => {
                   <br />
                   <small>2 devs</small>
                   <p className="text-justify">
-                    Une App co-codée avec Guillaume pour présenter React à nos
-                    camarades traitant sur l'organisation d'un projet et une
-                    introduction à Redux.
+                    Une App co-codée avec{" "}
+                    <a
+                      href="https://www.linkedin.com/in/guillaume-bento-aires-7623071a3/"
+                      alt="Guillaume Linkedin"
+                      title="Guillaume Linkedin"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="myColor"
+                    >
+                      Guillaume
+                    </a>{" "}
+                    pour présenter React à nos camarades traitant sur
+                    l'organisation d'un projet et une introduction à Redux.
                   </p>
                 </div>
               </Col>
