@@ -53,7 +53,7 @@ const Footer = () => {
           <Col className="col-12 col-md-4">
             <h4>RETROUVEZ-MOI</h4>
             <br />
-            <Row className="d-flex justify-content-around">
+            <Row className="d-flex justify-content-around mb-5 ml-5 mr-5">
               <a
                 href="https://instagram.com/alyson.b69"
                 alt="instagram Alyson"
