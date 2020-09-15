@@ -4,14 +4,14 @@ import { FaHome } from "react-icons/fa";
 
 const NavBar = () => {
   return (
-    <Navbar id="ab-nav" bg="light" expand="lg" fixed="top">
+    <Navbar collapseOnSelect id="ab-nav" bg="light" expand="lg" fixed="top">
       <Container>
         <Navbar.Brand href="#intro">
           <FaHome fontSize="1.5em" className="mr-2 mb-2" />
           Alyson B.
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="#intro">Accueil</Nav.Link>
             <Nav.Link href="#about">à propos</Nav.Link>
