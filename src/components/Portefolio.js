@@ -22,7 +22,7 @@ const Portefolio = () => {
           <Tab eventKey="tous" title="Tous">
             <h3 className="mt-2 mb-2 ml-2 mr-2 myColor">Tous mes projets</h3>
             <Row>
-              <Col className="col-4">
+              <Col className="col-12 col-md-4">
                 <a
                   href="https://alyson-b.netlify.app"
                   alt="alyson-b"
@@ -51,7 +51,7 @@ const Portefolio = () => {
                   </p>
                 </div>
               </Col>
-              <Col className="col-4">
+              <Col className="col-12 col-md-4">
                 <a
                   href="https://gamovore.netlify.app"
                   alt="gamovore"
@@ -81,7 +81,7 @@ const Portefolio = () => {
                   </p>
                 </div>
               </Col>
-              <Col className="col-4">
+              <Col className="col-12 col-md-4">
                 <a
                   href="https://techwatch-react.netlify.app"
                   alt="techwatch"
@@ -113,7 +113,7 @@ const Portefolio = () => {
               </Col>
             </Row>
             <Row>
-              <Col className="col-4">
+              <Col className="col-12 col-md-4">
                 <a
                   href="https://wildcodeschool.github.io/Lyon-js-202005-project-anonymous/"
                   alt="wallkingart"
@@ -144,7 +144,7 @@ const Portefolio = () => {
                 </div>
               </Col>
 
-              <Col className="col-4">
+              <Col className="col-12 col-md-4">
                 <a
                   href="https://liorapictures.site/"
                   alt="liorapictures"
@@ -174,7 +174,7 @@ const Portefolio = () => {
                   </p>
                 </div>
               </Col>
-              <Col className="col-4">
+              <Col className="col-12 col-md-4">
                 <a
                   href="https://feel-ink-good.com/"
                   alt="feel-ink-good"
@@ -211,7 +211,7 @@ const Portefolio = () => {
               Mes projets réalisés en groupe
             </h3>
             <Row>
-              <Col className="col-4">
+              <Col className="col-12 col-md-4">
                 <a
                   href="https://gamovore.netlify.app"
                   alt="gamovore"
@@ -241,7 +241,7 @@ const Portefolio = () => {
                   </p>
                 </div>
               </Col>
-              <Col className="col-4">
+              <Col className="col-12 col-md-4">
                 <a
                   href="https://techwatch-react.netlify.app"
                   alt="techwatch"
@@ -271,7 +271,7 @@ const Portefolio = () => {
                   </p>
                 </div>
               </Col>
-              <Col className="col-4">
+              <Col className="col-12 col-md-4">
                 <a
                   href="https://wildcodeschool.github.io/Lyon-js-202005-project-anonymous/"
                   alt="wallkingart"
@@ -308,7 +308,7 @@ const Portefolio = () => {
               Mes projets réalisés en solo
             </h3>
             <Row>
-              <Col className="col-4">
+              <Col className="col-12 col-md-4">
                 <a
                   href="https://alyson-b.netlify.app"
                   alt="alyson-b"
@@ -337,7 +337,7 @@ const Portefolio = () => {
                   </p>
                 </div>
               </Col>
-              <Col className="col-4">
+              <Col className="col-12 col-md-4">
                 <a
                   href="https://liorapictures.site/"
                   alt="liorapictures"
@@ -367,7 +367,7 @@ const Portefolio = () => {
                   </p>
                 </div>
               </Col>
-              <Col className="col-4">
+              <Col className="col-12 col-md-4">
                 <a
                   href="https://feel-ink-good.com/"
                   alt="feel-ink-good"
