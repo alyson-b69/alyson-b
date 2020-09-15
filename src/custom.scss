@@ -1,0 +1,430 @@
+// Override default variables before the import
+$body-bg: #fff;
+
+html,
+body,
+#root {
+  position: relative;
+}
+
+.wrapper {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+h1,
+h2,
+h3 {
+  width: 100%;
+}
+
+.myColor {
+  color: #fa6862;
+  transition: all 0.3s ease-out;
+}
+
+a.myColor:hover {
+  text-decoration: none !important;
+  color: lightcoral;
+  font-weight: bold;
+}
+
+.education a,
+.nav-tabs a {
+  color: #fa6862 !important;
+  transition: all 0.3s ease-out;
+}
+
+.education a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: lightcoral;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057 !important;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #fa6862 !important;
+  font-weight: bold !important;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #fa6862 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  transition: all 0.5s ease-out;
+}
+
+.navbar {
+  box-shadow: 0 2px 2px rgba(182, 182, 182, 0.75);
+  text-transform: uppercase;
+  opacity: 0.97;
+}
+
+.bouton {
+  text-align: center;
+  background-color: #fa6862 !important;
+  border-color: #fa6862 !important;
+  padding: 0.375rem 0.75rem;
+  color: #fff;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  transition: all 0.6s ease-out !important;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bouton:hover {
+  background-color: lightcoral !important;
+  border-color: lightcoral !important;
+}
+
+.progress {
+  background-color: #3a4149 !important;
+  width: 60%;
+}
+
+.progress-bar {
+  background-color: #fa6862 !important;
+}
+
+#intro {
+  text-align: center;
+  height: 100vh;
+  text-transform: uppercase;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  color: #fa6862;
+  background-color: #1a1e23;
+  // background-image: url(https://www.world-lolo.com/images/uploads/image.num1331036902.of.world-lolo.com.jpg);
+  // background-size: auto;
+}
+
+#intro h1 {
+  font-size: 4em;
+  font-weight: bold;
+  opacity: 1;
+  @media screen and (max-width: 1000px) {
+    font-size: 3em;
+  }
+}
+.pointer {
+  transition: all 0.5s ease-out;
+}
+
+.popover-header {
+  background-color: #fa6862 !important;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.pointer:hover {
+  cursor: pointer;
+  color: #fa6862;
+}
+
+.topNav {
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+  align-items: center;
+  height: 20px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 1%;
+  z-index: 1000;
+}
+
+.roundArrow {
+  background-color: #fa6862;
+  border-radius: 50%;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.roundArrow:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+#about,
+#contact {
+  text-align: center;
+  overflow-y: scroll;
+}
+
+#experiences,
+#portefolio {
+  overflow-y: scroll;
+}
+
+#competences,
+#education,
+#cv,
+#footer {
+  text-align: center;
+  background-color: #1a1e23;
+  color: #fff;
+  overflow-y: scroll;
+}
+
+.details {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 35%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.education h2 {
+  color: #424242;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.education p {
+  color: #999;
+}
+
+.year {
+  background-color: #424242;
+  border-radius: 5px;
+  width: 20%;
+}
+
+.year h2 {
+  color: #fff;
+}
+
+//TimeLine
+
+/** timeline box structure **/
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 2px;
+  background-color: #eee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.tldate {
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  padding: 3px 0;
+  font-weight: bold;
+  text-align: center;
+  -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.timeline li {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.timeline li:before,
+.timeline li:after {
+  content: " ";
+  display: table;
+}
+.timeline li:after {
+  clear: both;
+}
+.timeline li:before,
+.timeline li:after {
+  content: " ";
+  display: table;
+}
+
+/** timeline panels **/
+.timeline li .timeline-panel {
+  width: 46%;
+  float: left;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  padding: 20px;
+  position: relative;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+/** panel arrows **/
+.timeline li .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline li .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.timeline li .timeline-panel.noarrow:before,
+.timeline li .timeline-panel.noarrow:after {
+  top: 0;
+  right: 0;
+  display: none;
+  border: 0;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+/** timeline circle icons **/
+.timeline li .tl-circ {
+  position: absolute;
+  top: 23px;
+  left: 50%;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-left: -16px;
+  border: 3px solid #fa6862;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  z-index: 10;
+}
+
+/** timeline content **/
+
+.tl-heading h4 {
+  margin: 0;
+  color: #fa6862;
+}
+
+.tl-body p,
+.tl-body ul {
+  margin-bottom: 0;
+}
+
+.tl-body > p + p {
+  margin-top: 5px;
+}
+
+/** media queries **/
+@media (max-width: 991px) {
+  .timeline li .timeline-panel {
+    width: 44%;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-header h1 {
+    font-size: 1.8em;
+  }
+
+  ul.timeline:before {
+    left: 40px;
+  }
+
+  .tldate {
+    width: 140px;
+  }
+
+  ul.timeline li .timeline-panel {
+    width: calc(100% - 90px);
+    width: -moz-calc(100% - 90px);
+    width: -webkit-calc(100% - 90px);
+  }
+
+  ul.timeline li .tl-circ {
+    top: 22px;
+    left: 22px;
+    margin-left: 0;
+  }
+  ul.timeline > li > .tldate {
+    margin: 0;
+  }
+
+  ul.timeline > li > .timeline-panel {
+    float: right;
+  }
+
+  ul.timeline > li > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  ul.timeline > li > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+}
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
