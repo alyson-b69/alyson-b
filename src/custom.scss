@@ -426,5 +426,82 @@ a.myColor:hover {
   }
 }
 
+/* Hover portefolio */
+.box {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.box:hover {
+  box-shadow: 0 0 0 4px #fff, 0 0 15px #333;
+}
+.box:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: calc(100% - 50px);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+.box:hover:before {
+  opacity: 1;
+}
+.box img {
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+.box:hover img {
+  transform: translateY(-50px);
+}
+.box .box-content {
+  color: #fff;
+  width: 65%;
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  z-index: 1;
+  transition: all 0.3s ease 0.1s;
+}
+.box:hover .box-content {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.box .icon {
+  background-color: #fa6862;
+  width: 100%;
+  padding: 15px 0;
+  margin: 0;
+  list-style: none;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+a .box .icon {
+  color: #fff;
+}
+.box:hover .icon {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 990px) {
+  .box {
+    margin: 0 0 30px;
+  }
+}
+
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
