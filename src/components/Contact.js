@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { Container, Row, Form, Col, Button } from "react-bootstrap";
 import { FaEnvelopeOpenText } from "react-icons/fa";
+<<<<<<< HEAD
 import axios from "axios";
 
 const dotenv = require("dotenv");
 dotenv.config();
+=======
+import nodemailer from "nodemailer";
+>>>>>>> 0f4b2fa75ff7a42dc2c26a9777370f7d62459873
 
 const Contact = () => {
   const [state, setState] = useState({
@@ -28,6 +32,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+<<<<<<< HEAD
     axios
       .post("/send", { ...state })
       .then((response) => {
@@ -47,6 +52,58 @@ const Contact = () => {
           message: "There is a probleme on axios request",
         });
       });
+=======
+    let transporter = nodemailer.createTransport({
+      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD,
+      },
+    });
+
+    const mailOptions = {
+      from: state.email,
+      to: process.env.EMAIL,
+      subject: state.subject,
+      html:
+        state.name +
+        " (" +
+        state.email +
+        ") " +
+        " send this message : " +
+        state.message,
+    };
+
+    transporter.sendMail(mailOptions, function (err, info) {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log("Ok");
+      }
+    });
+    // axios
+    //   .post("/send", { ...state })
+    //   .then((response) => {
+    //     console.log(response);
+    //     setResult(response.data);
+    //     setState({
+    //       name: "",
+    //       email: "",
+    //       subject: "",
+    //       message: "",
+    //     });
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //     setResult({
+    //       success: false,
+    //       message: "There is a probleme on axios request",
+    //     });
+    //   });
+>>>>>>> 0f4b2fa75ff7a42dc2c26a9777370f7d62459873
   };
 
   return (
