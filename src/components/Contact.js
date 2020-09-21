@@ -31,7 +31,7 @@ const Contact = () => {
     axios
       .post(
         "https://cors-anywhere.herokuapp.com/https://alysonb-contact.herokuapp.com/",
-        { ...state }
+        { state }
       )
       .then((response) => {
         setResult(response.data);
