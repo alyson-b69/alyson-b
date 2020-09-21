@@ -1,6 +1,6 @@
 const path = require("path");
 const express = require("express");
-const transporter = require("../config");
+const transporter = require("./config");
 const dotenv = require("dotenv");
 dotenv.config();
 const app = express();
