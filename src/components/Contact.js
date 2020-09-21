@@ -31,7 +31,6 @@ const Contact = () => {
     axios
       .post("/send", { ...state })
       .then((response) => {
-        console.log(response);
         setResult(response.data);
         setState({
           name: "",
@@ -41,11 +40,11 @@ const Contact = () => {
         });
       })
       .catch((err) => {
-        console.log(err);
         setResult({
           success: false,
           message: "There is a probleme on axios request",
         });
+        console.log(result);
       });
   };
 
