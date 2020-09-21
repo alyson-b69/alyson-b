@@ -3,8 +3,8 @@ import { Container, Row, Form, Col, Button } from "react-bootstrap";
 import { FaEnvelopeOpenText } from "react-icons/fa";
 import axios from "axios";
 
-const dotenv = require("dotenv");
-dotenv.config();
+// const dotenv = require("dotenv");
+// dotenv.config();
 
 const Contact = () => {
   const [state, setState] = useState({
@@ -29,7 +29,7 @@ const Contact = () => {
     e.preventDefault();
 
     axios
-      .post("/send", { ...state })
+      .post("https://alysonb-contact.herokuapp.com/", { ...state })
       .then((response) => {
         setResult(response.data);
         setState({
@@ -46,6 +46,26 @@ const Contact = () => {
         });
         console.log(result);
       });
+
+    // axios
+    // .post()
+    //   .post("/send", { ...state })
+    //   .then((response) => {
+    //     setResult(response.data);
+    //     setState({
+    //       name: "",
+    //       email: "",
+    //       subject: "",
+    //       message: "",
+    //     });
+    //   })
+    //   .catch((err) => {
+    //     setResult({
+    //       success: false,
+    //       message: "There is a probleme on axios request",
+    //     });
+    //     console.log(result);
+    //   });
   };
 
   return (
