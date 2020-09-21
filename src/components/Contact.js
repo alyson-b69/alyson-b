@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Form, Col, Button } from "react-bootstrap";
 import { FaEnvelopeOpenText } from "react-icons/fa";
-import transporter from "../../config";
+import transporter from "../config";
 
 const dotenv = require("dotenv");
 dotenv.config();
