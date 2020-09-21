@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Form, Col, Button } from "react-bootstrap";
 import { FaEnvelopeOpenText } from "react-icons/fa";
-import transporter from "../config";
-
-const dotenv = require("dotenv");
-dotenv.config();
+import nodemailer from "nodemailer";
 
 const Contact = () => {
   const [state, setState] = useState({
@@ -26,6 +23,16 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    let transporter = nodemailer.createTransport({
+      service: "gmail",
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD,
+      },
+    });
+
     const mailOptions = {
       from: state.email,
       to: process.env.EMAIL,
@@ -40,13 +47,10 @@ const Contact = () => {
     };
 
     transporter.sendMail(mailOptions, function (err, info) {
-      if (error) {
-        callback(error);
+      if (err) {
+        console.log(err);
       } else {
-        callback(null, {
-          statusCode: 200,
-          body: "ok",
-        });
+        console.log("Ok");
       }
     });
     // axios
