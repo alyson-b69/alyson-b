@@ -107,7 +107,7 @@ const Experiences = () => {
                 </p>
               </div>
               <div className="tl-body">
-                <p>Comptable multisociétés.</p>
+                <p>Comptabilité multisociétés.</p>
               </div>
             </div>
           </li>
