@@ -191,7 +191,7 @@ const Experiences = () => {
             <div className="tl-circ"></div>
             <div className="timeline-panel">
               <div className="tl-heading">
-                <h4>Ekylis - Coptable Alternance</h4>
+                <h4>Ekylis - Comptable Alternance</h4>
                 <p>
                   <small className="text-muted">
                     <FaRegCalendarAlt className="mr-2" />
