@@ -36,7 +36,7 @@ const Contact = () => {
         state.email +
         ") " +
         " send this message : " +
-        rstate.message,
+        state.message,
     };
 
     transporter.sendMail(mailOptions, function (err, info) {
