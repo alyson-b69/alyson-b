@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Form, Col, Button } from "react-bootstrap";
 import { FaEnvelopeOpenText } from "react-icons/fa";
-import transporter from "../config";
+import axios from "axios";
 
 const dotenv = require("dotenv");
 dotenv.config();
@@ -13,6 +13,8 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+
+  const [result, setResult] = useState("");
 
   const inputChange = (e) => {
     const { name, value } = e.target;
@@ -26,48 +28,25 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const mailOptions = {
-      from: state.email,
-      to: process.env.EMAIL,
-      subject: state.subject,
-      html:
-        state.name +
-        " (" +
-        state.email +
-        ") " +
-        " send this message : " +
-        rstate.message,
-    };
-
-    transporter.sendMail(mailOptions, function (err, info) {
-      if (error) {
-        callback(error);
-      } else {
-        callback(null, {
-          statusCode: 200,
-          body: "ok",
+    axios
+      .post("/send", { ...state })
+      .then((response) => {
+        console.log(response);
+        setResult(response.data);
+        setState({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
         });
-      }
-    });
-    // axios
-    //   .post("/send", { ...state })
-    //   .then((response) => {
-    //     console.log(response);
-    //     setResult(response.data);
-    //     setState({
-    //       name: "",
-    //       email: "",
-    //       subject: "",
-    //       message: "",
-    //     });
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //     setResult({
-    //       success: false,
-    //       message: "There is a probleme on axios request",
-    //     });
-    //   });
+      })
+      .catch((err) => {
+        console.log(err);
+        setResult({
+          success: false,
+          message: "There is a probleme on axios request",
+        });
+      });
   };
 
   return (
