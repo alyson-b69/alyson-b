@@ -29,10 +29,7 @@ const Contact = () => {
     e.preventDefault();
 
     axios
-      .post(
-        "https://cors-anywhere.herokuapp.com/https://alysonb-contact.herokuapp.com/",
-        { state }
-      )
+      .post("https://alysonb-contact.herokuapp.com/", { ...state })
       .then((response) => {
         setResult(response.data);
         setState({
