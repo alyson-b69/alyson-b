@@ -35,6 +35,7 @@ const Contact = () => {
           subject: "",
           message: "",
         });
+        alert("Votre message a été envoyé !");
       })
       .catch((err) => {
         setResult({
