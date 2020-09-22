@@ -3,9 +3,6 @@ import { Container, Row, Form, Col, Button } from "react-bootstrap";
 import { FaEnvelopeOpenText } from "react-icons/fa";
 import axios from "axios";
 
-// const dotenv = require("dotenv");
-// dotenv.config();
-
 const Contact = () => {
   const [state, setState] = useState({
     name: "",
@@ -45,27 +42,8 @@ const Contact = () => {
           message: "There is a probleme on axios request",
         });
         console.log(result);
+        console.log(err);
       });
-
-    // axios
-    // .post()
-    //   .post("/send", { ...state })
-    //   .then((response) => {
-    //     setResult(response.data);
-    //     setState({
-    //       name: "",
-    //       email: "",
-    //       subject: "",
-    //       message: "",
-    //     });
-    //   })
-    //   .catch((err) => {
-    //     setResult({
-    //       success: false,
-    //       message: "There is a probleme on axios request",
-    //     });
-    //     console.log(result);
-    //   });
   };
 
   return (
