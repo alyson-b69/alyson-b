@@ -20,9 +20,9 @@ function App() {
       <Fade left>
         <About />
       </Fade>
-      <Fade>
-        <Competences />
-      </Fade>
+
+      <Competences />
+
       <Fade left>
         <Experiences />
       </Fade>
