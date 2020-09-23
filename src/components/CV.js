@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { FaRegAddressCard } from "react-icons/fa";
+import { Bounce } from "react-reveal";
 
 const CV = () => {
   return (
@@ -19,7 +20,9 @@ const CV = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bouton">Voir le PDF</button>
+            <Bounce>
+              <button className="bouton">Voir le PDF</button>
+            </Bounce>
           </a>
         </Row>
       </Container>
