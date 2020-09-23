@@ -82,7 +82,7 @@ const Contact = () => {
             <Col sm="10">
               <Form.Control
                 name="email"
-                type="text"
+                type="email"
                 placeholder="Votre email"
                 value={state.email}
                 onChange={inputChange}
