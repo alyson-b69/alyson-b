@@ -55,7 +55,7 @@ const Contact = () => {
             <FaEnvelopeOpenText className="mr-2 mb-2" />
             Prenons contact
           </h1>
-          <h3 className="myColor">Besoin de plus d'informations ?</h3>
+          <h3 className="myColor">Besoin de plus d'infos ?</h3>
         </Row>
 
         <Form onSubmit={handleSubmit}>
