@@ -35,9 +35,16 @@ const Experiences = () => {
                   <p></p>
                 </div>
                 <div className="tl-body">
-                  <p>Projet WALLKINGART - HTML / CSS / JavaScript</p>
                   <p>
-                    Projet GAMOVORE - React JS / Firebase / Styled Component
+                    <strong>Projet WALLKINGART</strong> - HTML / CSS /
+                    JavaScript
+                  </p>
+                  <p>
+                    <strong>Projet GAMOVORE</strong> - React JS / Firebase /
+                    Styled Component
+                  </p>
+                  <p>
+                    <strong>Projet SEPSIS</strong> - ReactJS / NodeJS
                   </p>
                 </div>
               </div>

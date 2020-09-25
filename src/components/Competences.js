@@ -19,8 +19,6 @@ import html from "../img/html.jpg";
 import js from "../img/js.jpg";
 import css from "../img/css.png";
 import node from "../img/node.jpg";
-import php from "../img/php.jpg";
-import python from "../img/python.jpg";
 import sql from "../img/sql.jpg";
 import react from "../img/react.jpg";
 import express from "../img/express.jpg";
@@ -29,9 +27,7 @@ import firebase from "../img/firebase.jpg";
 import mysql from "../img/mysql.jpg";
 import vscode from "../img/vscode.jpg";
 import github from "../img/github.jpg";
-import slack from "../img/slack.jpg";
 import postman from "../img/postman.jpg";
-import figma from "../img/figma.jpg";
 import photoshop from "../img/photoshop.jpg";
 import procreate from "../img/procreate.jpg";
 import { Zoom, Fade } from "react-reveal";
@@ -188,22 +184,6 @@ const Competences = () => {
                     </Card.Body>
                   </Card>
                 </Row>
-                <Row className="mt-3 justify-content-center align-items-center ">
-                  <Card style={{ width: "80%", color: "#1a1e23" }}>
-                    <Card.Img variant="top" src={php} />
-                    <Card.Body className="pt-2 pb-2">
-                      <Card.Title className="mb-0">PHP</Card.Title>
-                    </Card.Body>
-                  </Card>
-                </Row>
-                <Row className="mt-3 justify-content-center align-items-center ">
-                  <Card style={{ width: "80%", color: "#1a1e23" }}>
-                    <Card.Img variant="top" src={python} />
-                    <Card.Body className="pt-2 pb-2">
-                      <Card.Title className="mb-0">Python</Card.Title>
-                    </Card.Body>
-                  </Card>
-                </Row>
               </Zoom>
             </Col>
           </Col>
@@ -287,22 +267,6 @@ const Competences = () => {
                     <Card.Img variant="top" src={postman} />
                     <Card.Body className="pt-2 pb-2">
                       <Card.Title className="mb-0">Postman</Card.Title>
-                    </Card.Body>
-                  </Card>
-                </Row>
-                <Row className="mt-3 justify-content-center align-items-center ">
-                  <Card style={{ width: "80%", color: "#1a1e23" }}>
-                    <Card.Img variant="top" src={slack} />
-                    <Card.Body className="pt-2 pb-2">
-                      <Card.Title className="mb-0">Slack</Card.Title>
-                    </Card.Body>
-                  </Card>
-                </Row>
-                <Row className="mt-3 justify-content-center align-items-center ">
-                  <Card style={{ width: "80%", color: "#1a1e23" }}>
-                    <Card.Img variant="top" src={figma} />
-                    <Card.Body className="pt-2 pb-2">
-                      <Card.Title className="mb-0">Figma</Card.Title>
                     </Card.Body>
                   </Card>
                 </Row>
