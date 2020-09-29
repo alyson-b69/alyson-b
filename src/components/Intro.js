@@ -18,7 +18,7 @@ const Intro = () => {
             <RubberBand>
               <div>
                 <h1>Alyson Bernabeu</h1>
-                <h3>Développeuse web</h3>
+                <h3>Développeuse web ReactJS / NodeJS</h3>
               </div>
             </RubberBand>
           </Col>
