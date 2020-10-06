@@ -16,7 +16,7 @@ const CV = () => {
         </Row>
         <Row className="justify-content-around mt-4">
           <a
-            href="https://feel-ink-good.com/wp-content/uploads/2020/09/AlysonCV-1.pdf"
+            href="https://feel-ink-good.com/wp-content/uploads/2020/10/AlysonCV-1.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
