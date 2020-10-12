@@ -36,15 +36,17 @@ const Experiences = () => {
                 </div>
                 <div className="tl-body">
                   <p>
-                    <strong>Projet WALLKINGART</strong> - HTML / CSS /
-                    JavaScript
+                    <strong>Projet SEPSIS</strong> - ReactJS / NodeJS / FHIR /
+                    MongoDB / Azure
                   </p>
                   <p>
                     <strong>Projet GAMOVORE</strong> - React JS / Firebase /
                     Styled Component
                   </p>
+
                   <p>
-                    <strong>Projet SEPSIS</strong> - ReactJS / NodeJS
+                    <strong>Projet WALLKINGART</strong> - HTML / CSS /
+                    JavaScript
                   </p>
                 </div>
               </div>
