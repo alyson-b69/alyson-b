@@ -7,6 +7,9 @@ import alysonb from "../img/alyson-b.png";
 import techwatch from "../img/techwatch.png";
 import liora from "../img/liora.png";
 import feelinkgood from "../img/feelinkgood.png";
+import blogwilddev from "../img/blog-wild-dev.png";
+import chatwilddev from "../img/chat-wild-dev.png";
+import apiwilddev from "../img/api-wild-dev.png";
 import { Zoom } from "react-reveal";
 
 const Portefolio = () => {
@@ -23,6 +26,107 @@ const Portefolio = () => {
           <Tab eventKey="tous" title="Tous">
             <h3 className="mt-2 mb-2 ml-2 mr-2 myColor">Tous mes projets</h3>
             <Zoom>
+              <Row className="mb-3">
+                <Col className="col-12 col-md-4 myColor">
+                  <a
+                    href="https://chat.wild-dev.com"
+                    alt="chat wild-dev"
+                    title="chat wild-dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="box">
+                      <Image
+                        fluid
+                        rounded
+                        src={chatwilddev}
+                        alt="chat wild-dev"
+                        title="chat-wild-dev"
+                        with="100%"
+                      />
+                      <div className="box-content">
+                        <p className="text-justify">
+                          Une chat-room réalisée en javascript avec socket.io.
+                        </p>
+                      </div>
+                      <div className="icon inline-block">
+                        <strong>Chat wild-dev</strong>
+                        <small className="ml-2">
+                          <FaRegCalendarAlt /> Novembre 2020
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                </Col>
+
+                <Col className="col-12 col-md-4 myColor">
+                  <a
+                    href="https://wild-dev.com"
+                    alt="blog wild-dev"
+                    title="blog wild-dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="box">
+                      <Image
+                        fluid
+                        rounded
+                        thumbnail
+                        src={blogwilddev}
+                        alt="gamovore"
+                        title="gamovore"
+                        with="100%"
+                      />
+                      <div className="box-content">
+                        <p className="text-justify">
+                          Un blog réalisé avec Gatsby où il m'arrive de poster
+                          quelques articles tutos.
+                        </p>
+                      </div>
+                      <div className="icon inline-block">
+                        <strong>Blog wild-dev </strong>
+                        <small className="ml-2">
+                          <FaRegCalendarAlt /> octobre 2020
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                </Col>
+
+                <Col className="col-12 col-md-4 myColor">
+                  <a
+                    href="https://api.wild-dev.com"
+                    alt="api wild-dev"
+                    title="api wild-dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="box">
+                      <Image
+                        fluid
+                        rounded
+                        thumbnail
+                        src={apiwilddev}
+                        alt="api wild-dev"
+                        title="api wild-dev"
+                        with="100%"
+                      />
+                      <div className="box-content">
+                        <p className="text-justify">
+                          Une API réalisée avec Strapi pour le back-office de
+                          mon blog wild-dev.
+                        </p>
+                      </div>
+                      <div className="icon inline-block">
+                        <strong>API wild-dev </strong>
+                        <small className="ml-2">
+                          <FaRegCalendarAlt /> octobre 2020
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                </Col>
+              </Row>
               <Row className="mb-3">
                 <Col className="col-12 col-md-4 myColor">
                   <a
@@ -347,6 +451,107 @@ const Portefolio = () => {
               Mes projets réalisés en solo
             </h3>
             <Zoom>
+              <Row className="mb-3">
+                <Col className="col-12 col-md-4 myColor">
+                  <a
+                    href="https://chat.wild-dev.com"
+                    alt="chat wild-dev"
+                    title="chat wild-dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="box">
+                      <Image
+                        fluid
+                        rounded
+                        src={chatwilddev}
+                        alt="chat wild-dev"
+                        title="chat-wild-dev"
+                        with="100%"
+                      />
+                      <div className="box-content">
+                        <p className="text-justify">
+                          Une chat-room réalisée en javascript avec socket.io.
+                        </p>
+                      </div>
+                      <div className="icon inline-block">
+                        <strong>Chat wild-dev</strong>
+                        <small className="ml-2">
+                          <FaRegCalendarAlt /> Novembre 2020
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                </Col>
+
+                <Col className="col-12 col-md-4 myColor">
+                  <a
+                    href="https://wild-dev.com"
+                    alt="blog wild-dev"
+                    title="blog wild-dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="box">
+                      <Image
+                        fluid
+                        rounded
+                        thumbnail
+                        src={blogwilddev}
+                        alt="gamovore"
+                        title="gamovore"
+                        with="100%"
+                      />
+                      <div className="box-content">
+                        <p className="text-justify">
+                          Un blog réalisé avec Gatsby où il m'arrive de poster
+                          quelques articles tutos.
+                        </p>
+                      </div>
+                      <div className="icon inline-block">
+                        <strong>Blog wild-dev </strong>
+                        <small className="ml-2">
+                          <FaRegCalendarAlt /> octobre 2020
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                </Col>
+
+                <Col className="col-12 col-md-4 myColor">
+                  <a
+                    href="https://api.wild-dev.com"
+                    alt="api wild-dev"
+                    title="api wild-dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="box">
+                      <Image
+                        fluid
+                        rounded
+                        thumbnail
+                        src={apiwilddev}
+                        alt="api wild-dev"
+                        title="api wild-dev"
+                        with="100%"
+                      />
+                      <div className="box-content">
+                        <p className="text-justify">
+                          Une API réalisée avec Strapi pour le back-office de
+                          mon blog wild-dev.
+                        </p>
+                      </div>
+                      <div className="icon inline-block">
+                        <strong>API wild-dev </strong>
+                        <small className="ml-2">
+                          <FaRegCalendarAlt /> octobre 2020
+                        </small>
+                      </div>
+                    </div>
+                  </a>
+                </Col>
+              </Row>
               <Row>
                 <Col className="col-12 col-md-4 myColor">
                   <a
