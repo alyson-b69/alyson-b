@@ -29,7 +29,7 @@ const Portefolio = () => {
               <Row className="mb-3">
                 <Col className="col-12 col-md-4 myColor">
                   <a
-                    href="https://chat.wild-dev.com"
+                    href="https://kitten-box.wild-dev.com"
                     alt="chat wild-dev"
                     title="chat wild-dev"
                     target="_blank"
@@ -454,7 +454,7 @@ const Portefolio = () => {
               <Row className="mb-3">
                 <Col className="col-12 col-md-4 myColor">
                   <a
-                    href="https://chat.wild-dev.com"
+                    href="https://kitten-box.wild-dev.com"
                     alt="chat wild-dev"
                     title="chat wild-dev"
                     target="_blank"
