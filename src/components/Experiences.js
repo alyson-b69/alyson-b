@@ -36,8 +36,8 @@ const Experiences = () => {
                 </div>
                 <div className="tl-body">
                   <p>
-                    <strong>Projet perso CHAT</strong> - HTML / CSS / JavaScript
-                    / Socket.io
+                    <strong>Projet perso CHAT</strong> - ReactJS / NodeJS /
+                    ExpressJS / Socket.io / VPS
                   </p>
                   <p>
                     <strong>Projet perso blog WILD-DEV</strong> - ReactJS /
