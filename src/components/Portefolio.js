@@ -46,11 +46,12 @@ const Portefolio = () => {
                       />
                       <div className="box-content">
                         <p className="text-justify">
-                          Une chat-room réalisée en javascript avec socket.io.
+                          Une app de chat réalisée en ReactJS / NodeJS avec
+                          socket.io.
                         </p>
                       </div>
                       <div className="icon inline-block">
-                        <strong>Chat wild-dev</strong>
+                        <strong>Chat KITTEN-BOX</strong>
                         <small className="ml-2">
                           <FaRegCalendarAlt /> Novembre 2020
                         </small>
@@ -471,11 +472,12 @@ const Portefolio = () => {
                       />
                       <div className="box-content">
                         <p className="text-justify">
-                          Une chat-room réalisée en javascript avec socket.io.
+                          Une app de chat réalisée en ReactJS / NodeJS avec
+                          socket.io.
                         </p>
                       </div>
                       <div className="icon inline-block">
-                        <strong>Chat wild-dev</strong>
+                        <strong>Chat KITTEN-BOX</strong>
                         <small className="ml-2">
                           <FaRegCalendarAlt /> Novembre 2020
                         </small>
