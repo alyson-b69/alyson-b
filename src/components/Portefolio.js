@@ -74,8 +74,8 @@ const Portefolio = () => {
                         rounded
                         thumbnail
                         src={blogwilddev}
-                        alt="gamovore"
-                        title="gamovore"
+                        alt="blog wild dev"
+                        title="wild dev"
                         with="100%"
                       />
                       <div className="box-content">
@@ -500,8 +500,8 @@ const Portefolio = () => {
                         rounded
                         thumbnail
                         src={blogwilddev}
-                        alt="gamovore"
-                        title="gamovore"
+                        alt="blog wild dev"
+                        title="blog wild dev"
                         with="100%"
                       />
                       <div className="box-content">

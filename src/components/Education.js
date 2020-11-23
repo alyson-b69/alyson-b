@@ -5,19 +5,19 @@ import { Fade } from "react-reveal";
 
 const Education = () => {
   return (
-    <section id="education">
+    <section id="formation">
       <Container className="pt-5 pb-5">
         <Row className="mb-2">
           <h1 className="text-uppercase">
             <FaGraduationCap fontSize="1.5em" className="mr-2 mb-2" />
-            éducation
+            Formations
           </h1>
           <h3 className="myColor">Diplômes & formations</h3>
         </Row>
         <Row>
           <Col className="col-md-12">
             <Fade right>
-              <Row className="education mb-3">
+              <Row className="formation mb-3">
                 <Col className="col-8 details content pt-2">
                   <Row>
                     <h2 className="section-subtitle">
@@ -42,7 +42,7 @@ const Education = () => {
                 </Col>
               </Row>
 
-              <Row className="education mb-3 pl-2">
+              <Row className="formation mb-3 pl-2">
                 <Col className="col-3 year">
                   <br />
                   <h2 className="section-subtitle">2013</h2>
@@ -65,7 +65,7 @@ const Education = () => {
                 </Col>
               </Row>
 
-              <Row className="education mb-3">
+              <Row className="formation mb-3">
                 <Col className="col-8 details content pt-2">
                   <Row>
                     <h2 className="section-subtitle">Bac pro Comptabilité</h2>

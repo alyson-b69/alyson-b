@@ -18,6 +18,10 @@ h3 {
   width: 100%;
 }
 
+section {
+  overflow-y: hidden;
+}
+
 .myColor {
   color: #fa6862;
   transition: all 0.3s ease-out;
@@ -29,13 +33,13 @@ a.myColor:hover {
   font-weight: bold;
 }
 
-.education a,
+.formation a,
 .nav-tabs a {
   color: #fa6862 !important;
   transition: all 0.3s ease-out;
 }
 
-.education a:hover {
+.formation a:hover {
   text-decoration: none;
   font-weight: bold;
   color: lightcoral;
@@ -103,12 +107,11 @@ a.myColor:hover {
   text-align: center;
   height: 100vh;
   text-transform: uppercase;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
   color: #fa6862;
   background-color: #1a1e23;
-  // background-image: url(https://www.world-lolo.com/images/uploads/image.num1331036902.of.world-lolo.com.jpg);
-  // background-size: auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: auto;
 }
 
 #intro h1 {
@@ -119,12 +122,22 @@ a.myColor:hover {
     font-size: 3em;
   }
 }
+
+#intro h3 {
+  color: #fff;
+}
+
 .pointer {
   transition: all 0.5s ease-out;
 }
 
 .popover-header {
   background-color: #fa6862 !important;
+}
+
+.bs-popover-bottom > .arrow::after,
+.bs-popover-auto[x-placement^="bottom"] > .arrow::after {
+  border-bottom-color: #fa6862 !important;
 }
 
 .quote {
@@ -181,8 +194,18 @@ a.myColor:hover {
   overflow-y: scroll;
 }
 
+#experiences a {
+  color: #fa6862;
+  font-weight: 700;
+}
+
+#experiences a:hover {
+  color: #fa6862;
+  text-decoration: none;
+}
+
 #competences,
-#education,
+#formation,
 #cv,
 #footer {
   text-align: center;
@@ -199,14 +222,22 @@ a.myColor:hover {
   margin-right: 1%;
 }
 
-.education h2 {
+.formation h2 {
   color: #424242;
   font-size: 1.5em;
   font-weight: 500;
 }
 
-.education p {
+.formation p {
   color: #999;
+}
+
+.formation.mb-3.row {
+  padding-left: 5%;
+}
+
+.formation.mb-3.pl-2.row {
+  padding-left: 6% !important;
 }
 
 .year {
@@ -246,6 +277,7 @@ a.myColor:hover {
   padding: 3px 0;
   font-weight: bold;
   text-align: center;
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
   background: #fff;
@@ -424,6 +456,12 @@ a.myColor:hover {
     left: -14px;
     right: auto;
   }
+}
+
+.info {
+  margin-bottom: 1%;
+  color: #6c757d;
+  font-size: 0.9em;
 }
 
 /* Hover portefolio */

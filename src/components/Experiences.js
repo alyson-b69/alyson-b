@@ -23,7 +23,16 @@ const Experiences = () => {
               <div className="tl-circ"></div>
               <div className="timeline-panel">
                 <div className="tl-heading">
-                  <h4>Formation dev web - Wild Code School</h4>
+                  <h4>
+                    <a
+                      href="https://www.wildcodeschool.com/fr-FR"
+                      title="wild code school"
+                      target="_blank"
+                    >
+                      <br />
+                      Developpement web ReactJS / NodeJS Wild Code School
+                    </a>
+                  </h4>
                   <p>
                     <small className="text-muted">
                       <FaRegCalendarAlt className="mr-2" />
@@ -34,27 +43,74 @@ const Experiences = () => {
                   </p>
                   <p></p>
                 </div>
+                <div className="info">
+                  Formation intensive de 6 mois pour apprendre les languages de
+                  programmation web et mobile, ainsi que la gestion de projets
+                  en méthodes agiles.
+                </div>
                 <div className="tl-body">
                   <p>
-                    <strong>Projet perso KITTEN-BOX</strong> - ReactJS / NodeJS
-                    / Socket.io / VPS
+                    <strong>
+                      Projet perso{" "}
+                      <a
+                        href="https://kitten-box.wild-dev.com"
+                        title="kitten box"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        KITTEN-BOX
+                      </a>
+                    </strong>{" "}
+                    - ReactJS / NodeJS / Socket.io / VPS
                   </p>
                   <p>
-                    <strong>Projet perso blog WILD-DEV</strong> - ReactJS /
-                    Gatsby / Strapi
+                    <strong>
+                      Projet perso blog{" "}
+                      <a
+                        href="https://wild-dev.com"
+                        title="wild dev blog"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        WILD-DEV
+                      </a>
+                    </strong>{" "}
+                    - ReactJS / Gatsby / Strapi
                   </p>
                   <p>
                     <strong>Projet SEPSIS</strong> - ReactJS / NodeJS / FHIR /
                     PostgreSQL / Azure
                   </p>
                   <p>
-                    <strong>Projet GAMOVORE</strong> - React JS / Firebase /
-                    Styled Component
+                    <strong>
+                      Projet{" "}
+                      <a
+                        href="https://gamovore.netlify.app"
+                        alt="gamovore"
+                        title="gamovore"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        GAMOVORE
+                      </a>
+                    </strong>{" "}
+                    - React JS / Firebase / Styled Component
                   </p>
 
                   <p>
-                    <strong>Projet WALLKINGART</strong> - HTML / CSS /
-                    JavaScript
+                    <strong>
+                      Projet{" "}
+                      <a
+                        href="https://wildcodeschool.github.io/Lyon-js-202005-project-anonymous/"
+                        alt="wallkingart"
+                        title="wallkingart"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        WALLKINGART
+                      </a>
+                    </strong>{" "}
+                    - HTML / CSS / JavaScript
                   </p>
                 </div>
               </div>

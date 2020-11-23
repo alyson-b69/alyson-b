@@ -19,7 +19,7 @@ import html from "../img/html.jpg";
 import js from "../img/js.jpg";
 import css from "../img/css.png";
 import node from "../img/node.jpg";
-import sql from "../img/sql.jpg";
+import postgresql from "../img/postgrsql.png";
 import react from "../img/react.jpg";
 import express from "../img/express.jpg";
 import bootstrap from "../img/bootstrap.jpg";
@@ -30,6 +30,7 @@ import github from "../img/github.jpg";
 import postman from "../img/postman.jpg";
 import photoshop from "../img/photoshop.jpg";
 import procreate from "../img/procreate.jpg";
+import gatsbystrapi from "../img/gatsby-strapi.jpg";
 import { Zoom, Fade } from "react-reveal";
 
 const Competences = () => {
@@ -49,10 +50,10 @@ const Competences = () => {
         <Fade top>
           <Row className="mb-5">
             <OverlayTrigger
-              trigger="click"
+              trigger="hover"
               placement="top"
               overlay={
-                <Popover id={`popover-positioned-top`}>
+                <Popover id={`equipe`}>
                   <Popover.Title as="h3">Esprit d'équipe</Popover.Title>
                   <Popover.Content>
                     <p className="quote">
@@ -72,10 +73,10 @@ const Competences = () => {
             </OverlayTrigger>
 
             <OverlayTrigger
-              trigger="click"
+              trigger="hover"
               placement="bottom"
               overlay={
-                <Popover id={`popover-positioned-bottom`}>
+                <Popover id={`adaptation`}>
                   <Popover.Title as="h3">Capacité d'adaptation</Popover.Title>
                   <Popover.Content>
                     <p className="quote">
@@ -95,10 +96,10 @@ const Competences = () => {
             </OverlayTrigger>
 
             <OverlayTrigger
-              trigger="click"
+              trigger="hover"
               placement="top"
               overlay={
-                <Popover id={`popover-positioned-top`}>
+                <Popover id={`curiosite`}>
                   <Popover.Title as="h3">Curiosité</Popover.Title>
                   <Popover.Content>
                     <p className="quote">
@@ -119,10 +120,10 @@ const Competences = () => {
             </OverlayTrigger>
 
             <OverlayTrigger
-              trigger="click"
+              trigger="hover"
               placement="bottom"
               overlay={
-                <Popover id={`popover-positioned-bottom`}>
+                <Popover id={`creativite`}>
                   <Popover.Title as="h3">Créativité</Popover.Title>
                   <Popover.Content>
                     <p className="quote">
@@ -178,9 +179,17 @@ const Competences = () => {
                 </Row>
                 <Row className="mt-3 justify-content-center align-items-center ">
                   <Card style={{ width: "80%", color: "#1a1e23" }}>
-                    <Card.Img variant="top" src={sql} />
+                    <Card.Img variant="top" src={mysql} />
                     <Card.Body className="pt-2 pb-2">
-                      <Card.Title className="mb-0">SQL</Card.Title>
+                      <Card.Title className="mb-0">MySql</Card.Title>
+                    </Card.Body>
+                  </Card>
+                </Row>
+                <Row className="mt-3 justify-content-center align-items-center ">
+                  <Card style={{ width: "80%", color: "#1a1e23" }}>
+                    <Card.Img variant="top" src={postgresql} />
+                    <Card.Body className="pt-2 pb-2">
+                      <Card.Title className="mb-0">PostgreSQL</Card.Title>
                     </Card.Body>
                   </Card>
                 </Row>
@@ -233,9 +242,9 @@ const Competences = () => {
                 </Row>
                 <Row className="mt-3 justify-content-center align-items-center ">
                   <Card style={{ width: "80%", color: "#1a1e23" }}>
-                    <Card.Img variant="top" src={mysql} />
+                    <Card.Img variant="top" src={gatsbystrapi} />
                     <Card.Body className="pt-2 pb-2">
-                      <Card.Title className="mb-0">MySql</Card.Title>
+                      <Card.Title className="mb-0">Gatsby / Strapi</Card.Title>
                     </Card.Body>
                   </Card>
                 </Row>
