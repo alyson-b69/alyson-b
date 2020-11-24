@@ -28,6 +28,7 @@ const Experiences = () => {
                       href="https://www.wildcodeschool.com/fr-FR"
                       title="wild code school"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <br />
                       Developpement web ReactJS / NodeJS Wild Code School
