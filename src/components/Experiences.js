@@ -53,7 +53,7 @@ const Experiences = () => {
                 <div className="info">
                   Reprise du développement de l'interface utilisateur de Safecube (anciennement codée par une ESN), permettant le tracking de conteneurs en temps réel.
                   <br/>Refonte du design existant (maquettes + intégration)<br/>
-                  Création d'une librairie de composants partagés pour une deuxième plateforme.
+                  Création d'une librairie de composants partagés.
                 </div>
                 <div className="tl-body">
                   <p>
