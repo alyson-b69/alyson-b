@@ -2,8 +2,14 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import { FaPencilAlt, FaMapMarkerAlt, FaRegCalendarAlt } from "react-icons/fa";
 import { Zoom } from "react-reveal";
+import moment from 'moment';
 
 const Experiences = () => {
+  const computeDateFromNow = (date) => {
+  const today = moment();
+  return today.diff(moment(date), 'months');
+  }
+
   return (
     <section id="experiences">
       <Container className="pt-5 pb-5">
@@ -15,6 +21,73 @@ const Experiences = () => {
         </Row>
         <ul className="timeline">
           <Zoom>
+            <li>
+              <div className="tldate">2021</div>
+            </li>
+
+            <li className="timeline-inverted">
+              <div className="tl-circ"></div>
+              <div className="timeline-panel">
+                <div className="tl-heading">
+                  <h4>
+                    <a
+                        href="https://www.safecube.com"
+                        title="safecube"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                      <br />
+                      Safecube - Développeuse web (front)
+                    </a>
+                  </h4>
+                  <p>
+                    <small className="text-muted">
+                      <FaRegCalendarAlt className="mr-2" />
+                      01/2021 à aujourd'hui - {computeDateFromNow(moment([2021,0,4]))} mois{" "}
+                      <FaMapMarkerAlt className="ml-2 mr-2" />
+                      Lyon (69)
+                    </small>
+                  </p>
+                  <p></p>
+                </div>
+                <div className="info">
+                  Reprise du développement de l'interface utilisateur de Safecube (anciennement codée par une ESN), permettant le tracking de conteneurs en temps réel.
+                  <br/>Refonte du design existant (maquettes + intégration)<br/>
+                  Création d'une librairie de composants partagés pour une deuxième plateforme.
+                </div>
+                <div className="tl-body">
+                  <p>
+                    <strong>
+                      Interface{" "}
+                      <a
+                          href="https://app.safecube.com"
+                          title="safecube interface"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                      >
+                        Safecube
+                      </a>
+                    </strong>{" "}
+                    - ReactJS / Redux / typeScript / Leaflet / CanvasJS
+                  </p>
+                  <p>
+                    <strong>
+                      Libraire UI{" "}
+                      <a
+                          href="https://safecubeui.safecube.com"
+                          title="wild dev blog"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                      >
+                        Safecube-UI
+                      </a>
+                    </strong>{" "}
+                    - ReactJS / Storybook / Styled-components
+                  </p>
+                </div>
+              </div>
+            </li>
+
             <li>
               <div className="tldate">2020</div>
             </li>
@@ -31,7 +104,7 @@ const Experiences = () => {
                       rel="noopener noreferrer"
                     >
                       <br />
-                      Developpement web ReactJS / NodeJS Wild Code School
+                      Wild Code School - Formation développement web ReactJS / NodeJS
                     </a>
                   </h4>
                   <p>

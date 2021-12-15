@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Zoom } from "react-reveal";
 import RubberBand from "react-reveal/RubberBand";
+import Avatar from '../img/avatar.png';
 
 const Intro = () => {
   return (
@@ -11,7 +12,7 @@ const Intro = () => {
           <Col className="col-md-12">
             <Zoom>
               <img
-                src="https://feel-ink-good.com/wp-content/uploads/2020/03/avatar2-261x300.png"
+                src={Avatar}
                 alt="alyson-b"
               />
             </Zoom>
